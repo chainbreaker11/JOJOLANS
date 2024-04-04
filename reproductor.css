@@ -244,4 +244,32 @@ ul li.playing{
   pointer-events: none;
   color: var(--violet);
 }
+.volume-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #ff74a4; /* Color de fondo deseado */
+  outline: none;
+  border-radius: 5px;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #9f6ea3; /* Color del control deslizante */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.volume-control input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #ff74a4; /* Color del control deslizante para navegadores Firefox */
+  border-radius: 50%;
+}
+
+
 

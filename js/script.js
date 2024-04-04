@@ -59,7 +59,6 @@ function nextMusic(){
   playingSong(); 
 }
 
-// play or pause button event
 playPauseBtn.addEventListener("click", ()=>{
   const isMusicPlay = wrapper.classList.contains("paused");
   
@@ -116,7 +115,6 @@ progressArea.addEventListener("click", (e)=>{
   playingSong();
 });
 
-//change loop, shuffle, repeat icon onclick
 const repeatBtn = wrapper.querySelector("#repeat-plist");
 repeatBtn.addEventListener("click", ()=>{
   let getText = repeatBtn.innerText; 
@@ -229,3 +227,24 @@ function clicked(element){
   playingSong();
 }
 
+// Seleccionar el elemento de la barra de volumen
+const volumeSlider = document.getElementById("volume-slider");
+
+//
+volumeSlider.addEventListener("input", () => {
+  updateVolume();
+});
+
+function updateVolume() {
+  mainAudio.volume = volumeSlider.value;
+}
+
+function updateVolume() {
+  
+  const volumeValue = volumeSlider.value;
+  
+  
+  mainAudio.volume = volumeValue;
+ 
+  volumeSlider.style.background = `linear-gradient(to right, #4caf50 ${volumeValue * 100}%, #ccc ${volumeValue * 100}%)`;
+}
