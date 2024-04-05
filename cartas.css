@@ -11,14 +11,14 @@
 }
 
 .card-img-top {
-  height: 450px; /* Altura predeterminada para las imágenes */
-  object-fit: cover; /* Ajuste de la imagen para que cubra el contenedor */
-}
+  height: 450px; 
+  object-fit: cover; 
+  }
 
 @media (max-width: 767px) {
   .card-img-top {
-      height: auto; /* Cambia la altura automática para adaptarse al ancho del dispositivo */
-      max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+      height: auto; 
+      max-width: 100%; 
   }
 }
 h1,a{
