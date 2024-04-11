@@ -1,3 +1,4 @@
+/* Sacado de dos videos de youtube XD */
 const wrapper = document.querySelector(".wrapper"),
 musicImg = wrapper.querySelector(".img-area img"),
 musicName = wrapper.querySelector(".song-details .name"),
@@ -230,7 +231,7 @@ function clicked(element){
 // Seleccionar el elemento de la barra de volumen
 const volumeSlider = document.getElementById("volume-slider");
 
-//
+
 volumeSlider.addEventListener("input", () => {
   updateVolume();
 });
